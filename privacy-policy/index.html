@@ -1,75 +1,158 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Travel Document Vault</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#003A87',
+              gold: '#FFB000',
+              goldHover: '#e69f00',
+              white: '#FFFFFF',
+            },
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            vault: '0 28px 65px rgba(0, 0, 0, 0.35)',
+            glass: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+          },
+          animation: {
+            'fade-in-down': 'fadeInDown 0.8s ease-out forwards',
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards 0.2s',
+            'fade-in': 'fadeIn 1s ease-out forwards 0.4s',
+          },
+          keyframes: {
+            fadeInDown: {
+              '0%': { opacity: '0', transform: 'translateY(-20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
 </head>
+<body class="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900 via-brand-blue to-slate-900 font-sans antialiased text-slate-800 min-h-screen">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-8">
+    
+    <header class="flex items-center justify-between animate-fade-in-down">
+      <div class="flex flex-col">
+        <h1 class="text-3xl font-bold tracking-tight text-white drop-shadow">
+          Privacy Policy
+        </h1>
+        <span class="text-blue-100/80 text-sm font-medium">Travel Document Vault</span>
+      </div>
+      <a href="../index.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-blue-100 font-semibold text-sm hover:text-white hover:bg-white/10 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Support
+      </a>
+    </header>
 
-<body style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 24px; max-width: 800px; line-height: 1.6;">
-  <h1>Privacy Policy</h1>
+    <main class="glass-panel rounded-2xl shadow-glass border border-white/20 p-6 sm:p-10 space-y-8 animate-fade-in-up opacity-0">
+      
+      <div class="space-y-4 pb-4 border-b border-slate-100">
+        <p class="text-sm font-semibold text-brand-blue">Last updated: December 26, 2025</p>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Mustafa Hafeez (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our mobile application (the “Application”). Please read this Privacy Policy carefully. <span class="font-bold">IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS THE APPLICATION.</span>
+        </p>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “Last updated” date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the Application after the date such revised Privacy Policy is posted.
+        </p>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          This Privacy Policy does not apply to the third-party online/mobile store from which you install the Application or make payments, including any in-game virtual items, which may also collect and use data about you. We are not responsible for any of the data collected by any such third party.
+        </p>
+      </div>
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-brand-blue">Introduction</h2>
+        <p class="text-slate-600 leading-relaxed">
+          Travel Document Vault is designed to provide a secure, local environment for managing your personal travel documents. Our philosophy is strict data isolation: we believe your sensitive documents belong solely to you, on your device. This Application operates without user accounts, cloud synchronization, or backend servers.
+        </p>
+      </section>
 
-  <p>
-    This app is a personal document organizer and reminder tool designed to help users
-    store copies of documents and receive expiry reminders.
-  </p>
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-brand-blue">Information Handling</h2>
+        <p class="text-slate-600 leading-relaxed">
+          All information entered into the Application—including document images, passport details, notes, and expiry dates—remains exclusively on your local device. The Application utilizes on-device Optical Character Recognition (OCR) technology solely to assist in data entry. This processing occurs entirely within the device's secure sandbox; no image data or extracted text is transmitted to external servers for processing or analysis.
+        </p>
+      </section>
 
-  <h2>Data Storage</h2>
-  <p>
-    All documents, images, and related data are stored locally on your device using
-    system protections provided by the operating system.
-  </p>
-  <p>
-    The app does not upload, sync, back up, or store your documents on any external
-    servers or cloud services.
-  </p>
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-brand-blue">On-Device Storage</h2>
+        <p class="text-slate-600 leading-relaxed">
+          Your data is stored securely on your device using system protections. The Application leverages the native security features of the iOS platform to ensure data isolation. We do not maintain any external databases, and the Application does not possess the capability to sync, backup, or upload your content to any cloud service or third-party server.
+        </p>
+      </section>
 
-  <h2>Data Collection</h2>
-  <p>
-    This app does not collect, track, monitor, or transmit personal data.
-    No analytics, advertising SDKs, tracking technologies, or third-party data
-    collection services are used.
-  </p>
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-brand-blue">Data Sharing</h2>
+        <p class="text-slate-600 leading-relaxed">
+          Data export or sharing is strictly user-initiated. Information leaves the Application only when you explicitly interact with the system share sheet to send a document or detail. The Application performs no background transmission of data.
+        </p>
+      </section>
 
-  <h2>Sharing and Export</h2>
-  <p>
-    Documents and files are shared or exported only when you explicitly choose to do so
-    using your device’s built-in system sharing features.
-  </p>
-  <p>
-    The app does not automatically transmit or share any data.
-  </p>
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-brand-blue">Third-Party Services</h2>
+        <p class="text-slate-600 leading-relaxed">
+          The Application minimizes reliance on external code to preserve privacy. We do not utilize third-party analytics platforms, crash reporting SDKs, or advertising networks. Interactions with external services are limited to standard system-level functions provided by the operating system (e.g., local notifications, share sheet).
+        </p>
+      </section>
 
-  <h2>Notifications</h2>
-  <p>
-    The app may send local notifications to remind you about upcoming document expiry
-    dates or events.
-  </p>
-  <p>
-    These notifications are generated and scheduled entirely on your device and are not
-    sent through external servers.
-  </p>
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-brand-blue">Notifications</h2>
+        <p class="text-slate-600 leading-relaxed">
+          Expiry reminders are managed locally via the device's notification center. The scheduling and delivery of these alerts occur entirely on-device, ensuring that your travel plans and document expiry dates are not tracked externally.
+        </p>
+      </section>
 
-  <h2>Disclaimer</h2>
-  <p>
-    This app is provided as a personal organization and reminder tool only.
-    It does not verify the authenticity, validity, accuracy, or legal status of any
-    documents stored within the app.
-  </p>
-  <p>
-    All information entered into the app, including dates and document details, is
-    provided by the user and should be independently reviewed and verified.
-  </p>
-  <p>
-    This app does not provide legal, travel, immigration, or professional advice.
-  </p>
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-brand-blue">User Control</h2>
+        <p class="text-slate-600 leading-relaxed">
+          You retain complete autonomy over your data. You may add, modify, export, or permanently delete records at your discretion. As there are no user accounts or remote servers, deleting the Application from your device results in the immediate and permanent removal of all associated local data.
+        </p>
+      </section>
 
-  <h2>Contact</h2>
-  <p>
-    If you have any questions about this privacy policy, you can contact:
-    <br />
-    <a href="mailto:support@mustafahafeez.com">support@mustafahafeez.com</a>
-  </p>
+      <section class="space-y-3 border-t border-slate-100 pt-6">
+        <h2 class="text-xl font-bold text-brand-blue">Contact Information</h2>
+        <p class="text-slate-600 leading-relaxed">
+          For questions about this policy, contact <a href="mailto:support@mustafahafeez.com" class="text-brand-blue font-semibold hover:underline decoration-blue-200 underline-offset-4">support@mustafahafeez.com</a>
+        </p>
+      </section>
+
+    </main>
+
+    <footer class="text-center text-blue-200 text-sm pb-4 animate-fade-in opacity-0">
+      © Travel Document Vault · <a class="underline decoration-blue-200 underline-offset-4 hover:text-white transition" href="mailto:support@mustafahafeez.com">support@mustafahafeez.com</a>
+    </footer>
+  </div>
 </body>
 </html>
