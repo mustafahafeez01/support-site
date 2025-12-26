@@ -27,18 +27,11 @@
             <stop offset="100%" stop-color="#B45309" />
         </linearGradient>
 
-        <!-- Filters -->
-        <filter id="glass_blur" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
-        </filter>
-        
-        <filter id="soft_shadow" x="-50%" y="-50%" width="200%" height="200%">
-             <feDropShadow dx="0" dy="15" stdDeviation="30" flood-color="#000000" flood-opacity="0.5"/>
-        </filter>
+        <!-- Filters Removed for Crispness -->
     </defs>
 
     <!-- 2. Glass Passport Booklet -->
-    <g filter="url(#soft_shadow)">
+    <g>
         <!-- Passport Shape -->
         <path d="M 280,240 h 420 a 30,30 0 0 1 30,30 v 480 a 30,30 0 0 1 -30,30 h -420 a 20,20 0 0 1 -20,-20 v -500 a 20,20 0 0 1 20,-20 z" 
               fill="url(#glass_gradient)" 
@@ -65,8 +58,7 @@
         <circle cx="115" cy="115" r="115"
               fill="url(#gold_face)" 
               stroke="url(#gold_rim)" 
-              stroke-width="8" 
-              filter="url(#soft_shadow)" />
+              stroke-width="8" />
               
         <!-- Overlapping Icons Group -->
         <g transform="translate(30, 45)">
