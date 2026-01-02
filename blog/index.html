@@ -49,12 +49,22 @@
             glass: '0 8px 32px 0 rgba(0, 0, 0, 0.2)',
           },
           animation: {
-            'fade-in': 'fadeIn 0.8s ease-out forwards',
+            'fade-in-down': 'fadeInDown 0.8s ease-out forwards',
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards 0.2s',
+            'fade-in': 'fadeIn 1s ease-out forwards 0.4s',
           },
           keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0', transform: 'translateY(10px)' },
+            fadeInDown: {
+              '0%': { opacity: '0', transform: 'translateY(-20px)' },
               '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
             },
           },
         },
@@ -139,10 +149,10 @@
   </nav>
 
   <main class="relative pt-32 pb-24 px-4 sm:px-6">
-    <article class="max-w-[680px] mx-auto animate-fade-in relative z-10">
+    <article class="max-w-[680px] mx-auto relative z-10">
       
       <!-- Header -->
-      <header class="mb-14 text-center">
+      <header class="mb-14 text-center animate-fade-in-down">
         
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 leading-[1.1] tracking-tight drop-shadow-2xl">
           Why I Built Travel<br />
@@ -164,103 +174,105 @@
         </div>
       </header>
 
-      <!-- Content -->
-      <div class="prose prose-lg prose-invert prose-headings:font-bold prose-headings:text-white prose-p:text-blue-100/80 prose-p:leading-relaxed prose-strong:text-brand-gold prose-a:text-brand-gold hover:prose-a:text-white prose-blockquote:border-brand-gold prose-blockquote:bg-blue-500/5 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-li:text-blue-100/80">
+      <!-- Content Container -->
+      <div class="glass-panel rounded-2xl shadow-glass p-8 sm:p-12 animate-fade-in-up opacity-0">
         
-          I’ve had that half-second panic the night before a trip. The same feeling you get at the airport when you open a folder and your stomach drops.
-        
-        <p>
-          You’re lying in bed and your brain suddenly goes:<br>
-          <em>Wait. Did I renew the kids’ passports?</em>
-        </p>
+        <div class="prose prose-lg prose-invert prose-headings:font-bold prose-headings:text-white prose-p:text-blue-100/80 prose-p:leading-relaxed prose-strong:text-brand-gold prose-a:text-brand-gold hover:prose-a:text-white prose-blockquote:border-brand-gold prose-blockquote:bg-blue-500/5 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-li:text-blue-100/80">
+          
+            I’ve had that half-second panic the night before a trip. The same feeling you get at the airport when you open a folder and your stomach drops.
+          
+          <p>
+            You’re lying in bed and your brain suddenly goes:<br>
+            <em>Wait. Did I renew the kids’ passports?</em>
+          </p>
 
-        <p>
-          Not a loud alarm. Just a knot in your stomach.
-        </p>
+          <p>
+            Not a loud alarm. Just a knot in your stomach.
+          </p>
 
-        <p>
-          I remember standing over a pile of documents. Passports, visas, IDs. All slightly outdated, all slightly important. Trying to remember what expired when. Trying to remember if I already checked it. Or just assumed I had.
-        </p>
-        
-        <p>
-          Then the questions start stacking:
-        </p>
-        
-        <ul class="my-8 pl-4 space-y-2 text-blue-200/90 font-medium list-none">
-          <li>Did I renew everyone’s passport?</li>
-          <li>Is that visa still valid?</li>
-          <li>Did I actually download the return tickets?</li>
-        </ul>
+          <p>
+            I remember standing over a pile of documents. Passports, visas, IDs. All slightly outdated, all slightly important. Trying to remember what expired when. Trying to remember if I already checked it. Or just assumed I had.
+          </p>
+          
+          <p>
+            Then the questions start stacking:
+          </p>
+          
+          <ul class="my-8 pl-4 space-y-2 text-blue-200/90 font-medium list-none">
+            <li>Did I renew everyone’s passport?</li>
+            <li>Is that visa still valid?</li>
+            <li>Did I actually download the return tickets?</li>
+          </ul>
 
-        <p>
-          What bothered me wasn’t the kids asking questions. It was that voice in my own head that wouldn’t stop.
-        </p>
+          <p>
+            What bothered me wasn’t the kids asking questions. It was that voice in my own head that wouldn’t stop.
+          </p>
 
-        <p>
-          <em>If this goes wrong, it’s on me.<br>
-          If we get stuck at a border, I’ll know exactly why.</em>
-        </p>
+          <p>
+            <em>If this goes wrong, it’s on me.<br>
+            If we get stuck at a border, I’ll know exactly why.</em>
+          </p>
 
-        <p>
-          I didn’t want another checklist. I didn’t want another spreadsheet. I wanted to stop carrying this stuff around in my head.
-        </p>
+          <p>
+            I didn’t want another checklist. I didn’t want another spreadsheet. I wanted to stop carrying this stuff around in my head.
+          </p>
 
-        <p>
-          So I built something for myself.
-        </p>
+          <p>
+            So I built something for myself.
+          </p>
 
-        <p class="text-xl font-bold text-white mt-12 mb-8">But here’s the part I cared about most: I didn’t want to build just another cloud app.</p>
-        
-        <p>
-          These are your family’s most sensitive documents. If you can’t trust the app, it’s useless. And honestly, I don’t trust new apps with that kind of data.
-        </p>
-        
-        <p>
-          So I made a hard call:
-        </p>
-        
-        <p>
-          <strong>No cloud.<br>
-          No accounts.<br>
-          Nothing quietly syncing somewhere I can’t see.</strong>
-        </p>
-        
-        <p>
-          Everything you scan. Every note you add. It stays on your phone. Not because it sounds good on a landing page, but because I didn’t want to explain to myself why I took shortcuts with something this personal.
-        </p>
+          <p class="text-xl font-bold text-white mt-12 mb-8">But here’s the part I cared about most: I didn’t want to build just another cloud app.</p>
+          
+          <p>
+            These are your family’s most sensitive documents. If you can’t trust the app, it’s useless. And honestly, I don’t trust new apps with that kind of data.
+          </p>
+          
+          <p>
+            So I made a hard call:
+          </p>
+          
+          <p>
+            <strong>No cloud.<br>
+            No accounts.<br>
+            Nothing quietly syncing somewhere I can’t see.</strong>
+          </p>
+          
+          <p>
+            Everything you scan. Every note you add. It stays on your phone. Not because it sounds good on a landing page, but because I didn’t want to explain to myself why I took shortcuts with something this personal.
+          </p>
 
-        <p>
-          If the app guesses an expiry date, you still confirm it. I don’t want silent mistakes.
-        </p>
-        
-        <p>
-          Maybe one day there will be cloud features. Maybe. But only if I can do it without compromising the original promise.
-        </p>
+          <p>
+            If the app guesses an expiry date, you still confirm it. I don’t want silent mistakes.
+          </p>
+          
+          <p>
+            Maybe one day there will be cloud features. Maybe. But only if I can do it without compromising the original promise.
+          </p>
 
-        <p>
-          For now, it’s just you and your phone.
-        </p>
+          <p>
+            For now, it’s just you and your phone.
+          </p>
 
-        <p>
-          This app is for the organizers who’ve tried to make spreadsheets work. For parents holding multiple passports at immigration, flipping through them too fast. For expats juggling visas, permits, and renewal dates that never seem to line up.
-        </p>
-        
-        <p>
-          Mostly, it’s for anyone who wants to stop second-guessing themselves at 2 a.m.
-        </p>
-        
-        <p>
-          If it helps you travel a little lighter, mentally, then it did its job.
-        </p>
+          <p>
+            This app is for the organizers who’ve tried to make spreadsheets work. For parents holding multiple passports at immigration, flipping through them too fast. For expats juggling visas, permits, and renewal dates that never seem to line up.
+          </p>
+          
+          <p>
+            Mostly, it’s for anyone who wants to stop second-guessing themselves at 2 a.m.
+          </p>
+          
+          <p>
+            If it helps you travel a little lighter, mentally, then it did its job.
+          </p>
+        </div>
+
+        <!-- Author Sig -->
+        <div class="mt-16 sm:mt-24 pt-10 border-t border-white/5 text-center">
+          <p class="text-xs text-blue-200/30 mb-8 font-medium tracking-wide">This app was built for personal use first. It does not collect data, track users, or require an account.</p>
+          <p class="font-handwriting text-3xl text-white/90 mb-2">Mustafa</p>
+          <p class="text-blue-200/40 text-sm font-medium tracking-wide uppercase">Founder, Travel Document Vault</p>
+        </div>
       </div>
-
-      <!-- Author Sig -->
-      <div class="mt-16 sm:mt-24 pt-10 border-t border-white/5 text-center">
-        <p class="text-xs text-blue-200/30 mb-8 font-medium tracking-wide">This app was built for personal use first. It does not collect data, track users, or require an account.</p>
-        <p class="font-handwriting text-3xl text-white/90 mb-2">Mustafa</p>
-        <p class="text-blue-200/40 text-sm font-medium tracking-wide uppercase">Founder, Travel Document Vault</p>
-      </div>
-
     </article>
   </main>
 
