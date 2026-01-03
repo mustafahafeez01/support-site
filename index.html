@@ -251,6 +251,14 @@
           <span class="text-xs text-blue-100/80 font-medium">Family</span>
         </div>
       </div>
+
+      <!-- Why I Built This Link (Mobile) -->
+      <a href="blog/" class="inline-flex items-center gap-2 text-brand-gold hover:text-brand-goldHover text-sm font-medium transition-colors">
+        Why I built this app
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
     </header>
 
     <!-- Desktop Hero (Hidden on mobile) -->
@@ -518,11 +526,83 @@
       </div>
 
       <!-- Mobile Pricing Summary (Visible only on mobile) -->
-      <div class="md:hidden glass-panel p-6 rounded-2xl text-center mx-4 border border-brand-gold/30">
-        <h3 class="text-2xl font-bold text-white mb-2">Free to Start</h3>
-        <p class="text-blue-100/80 mb-4">Upgrade to Pro for just <strong class="text-brand-gold">$9.99 once</strong>.</p>
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-brand-gold text-xs font-semibold tracking-wide uppercase">
-          No Subscriptions Ever
+      <!-- Mobile Pricing (Visible only on mobile) -->
+      <div class="md:hidden space-y-4 px-4">
+        <!-- Free Card Mobile -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/5">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-bold text-white">Free</h3>
+            <span class="text-blue-200/60 text-sm">Forever</span>
+          </div>
+          <ul class="space-y-3 mb-6 text-sm">
+            <li class="flex items-center gap-3 text-slate-300">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>1 Profile</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-300">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>Up to 5 documents</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-300">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>Expiry Reminders</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-300">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>On-Device OCR</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-300">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>PIN Lock</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pro Card Mobile -->
+        <div class="glass-panel p-6 rounded-2xl border border-brand-gold/30 relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-brand-gold text-brand-blue text-[10px] font-bold rounded-full uppercase tracking-wide">
+            Best Value
+          </div>
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-bold text-white">Pro</h3>
+            <span class="text-xl font-bold text-brand-gold">$9.99</span>
+          </div>
+          <p class="text-xs text-blue-200/60 mb-4">For your whole family, forever. No subscription.</p>
+          
+          <ul class="space-y-3 mb-6 text-sm">
+            <li class="flex items-center gap-3 text-white">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span><strong>Unlimited</strong> Profiles</span>
+            </li>
+            <li class="flex items-center gap-3 text-white">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span><strong>Unlimited</strong> Documents</span>
+            </li>
+            <li class="flex items-center gap-3 text-white">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>Combined PDF for printing</span>
+            </li>
+            <li class="flex items-center gap-3 text-white">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>Batch backup (ZIP)</span>
+            </li>
+            <li class="flex items-center gap-3 text-white">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>Biometric Lock (Face ID / Touch ID)</span>
+            </li>
+            <li class="flex items-center gap-3 text-white">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>Custom reminder timing</span>
+            </li>
+            <li class="flex items-center gap-3 text-white">
+              <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span>Multi-page documents</span>
+            </li>
+          </ul>
+          
+          <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="block w-full py-3 rounded-xl bg-brand-gold text-brand-blue font-bold text-center text-sm hover:bg-brand-goldHover transition-colors">
+            Get Pro
+          </a>
         </div>
       </div>
 
@@ -533,7 +613,7 @@
         <div class="glass-card rounded-2xl p-8 flex flex-col">
           <div class="mb-6">
             <h3 class="text-xl font-bold text-white mb-2">Free</h3>
-            <p class="text-blue-200/60 text-sm">Perfect for getting started</p>
+            <p class="text-blue-200/60 text-sm">Everything you need for solo travel</p>
           </div>
 
           <div class="mb-6">
@@ -588,7 +668,13 @@
               <svg class="h-5 w-5 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              <span>Share individual docs</span>
+              <span>Share individual documents</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-300">
+              <svg class="h-5 w-5 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>PIN Lock (4-6 digit)</span>
             </li>
           </ul>
 
@@ -605,7 +691,7 @@
 
           <div class="mb-6">
             <h3 class="text-xl font-bold text-white mb-2">Pro</h3>
-            <p class="text-blue-200/60 text-sm">For families who travel</p>
+            <p class="text-blue-200/60 text-sm">Unlock the full vault for your family</p>
           </div>
 
           <div class="mb-2">
@@ -615,7 +701,7 @@
 
           <div class="mb-6">
             <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/10 text-blue-200 text-xs font-medium border border-blue-400/20 tracking-wide">
-              Lifetime license · One-time purchase
+              For your whole family, forever
             </span>
           </div>
 
@@ -638,19 +724,31 @@
               <svg class="h-5 w-5 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              <span>Combined PDF export</span>
+              <span>Combined PDF for printing</span>
             </li>
             <li class="flex items-center gap-3 text-slate-300">
               <svg class="h-5 w-5 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              <span>Batch export (ZIP)</span>
+              <span>Batch backup (ZIP)</span>
             </li>
             <li class="flex items-center gap-3 text-slate-300">
               <svg class="h-5 w-5 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              <span>Biometric app lock</span>
+              <span>Biometric Lock (Face ID / Touch ID)</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-300">
+              <svg class="h-5 w-5 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Custom reminder timing</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-300">
+              <svg class="h-5 w-5 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Multi-page documents</span>
             </li>
             </ul>
 
