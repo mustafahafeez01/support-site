@@ -177,7 +177,6 @@
         </div>
       </div>
     </div>
-
   </nav>
 
   <!-- Mobile Menu (Moved outside nav to avoid backdrop-filter clipping) -->
@@ -208,7 +207,7 @@
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-300">Passport Renewal</span><br />
         <span class="text-blue-200">Again</span>
       </h1>
-      
+
       <p class="text-blue-100/90 text-lg leading-relaxed">
         All your travel documents. <br/>
         One less thing to worry about.
@@ -291,23 +290,22 @@
           <span class="text-blue-200/60 text-sm font-medium">One-time purchase · No subscription</span>
         </div>
       </div>
-
     </header>
 
-    <!-- Privacy Statement -->
+    <!-- Privacy Statement (Desktop only) -->
     <section id="privacy" class="hidden md:block scroll-fade-in glass-panel rounded-3xl p-8 sm:p-10 text-center max-w-4xl mx-auto relative overflow-hidden">
       <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Private by Design</h2>
-  <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">
-    You shouldn't have to trust a third-party server with your family's documents. That’s why we built this to be 100% offline. No accounts. No middleman. Just your phone.
-  </p>
-      
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">
+        You shouldn't have to trust a third-party server with your family's documents. That’s why we built this to be 100% offline. No accounts. No middleman. Just your phone.
+      </p>
+
       <div class="mt-8 flex flex-wrap justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-blue-200/50 font-medium">
-          <span class="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-gold" viewBox="0 0 24 24" fill="currentColor">
-              <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-            </svg>
-            No Tracking or Behavioral Analytics
-          </span>
+        <span class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-gold" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+          </svg>
+          No Tracking or Behavioral Analytics
+        </span>
         <span class="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-gold" viewBox="0 0 24 24" fill="currentColor">
             <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
@@ -321,7 +319,7 @@
           Your Data Stays on Your Device
         </span>
       </div>
-      
+
       <div class="mt-8 pt-6 border-t border-white/5">
         <p class="text-brand-gold font-semibold mb-1">Why We Built This</p>
         <a href="blog/" class="text-blue-200/60 hover:text-white transition-colors text-sm inline-flex items-center gap-1 group">
@@ -338,15 +336,15 @@
         <ul class="space-y-4 text-sm text-blue-100/80">
           <li class="flex gap-3">
              <span class="text-xl">✈️</span>
-             <span><strong>At the Airport:</strong> Access flight details and passport numbers instantly.</span>
+             <span><strong>At the Airport:</strong> Quickly access passport and travel details when you need them.</span>
           </li>
           <li class="flex gap-3">
              <span class="text-xl">🏨</span>
-             <span><strong>Booking Hotels:</strong> Copy-paste passport details for the whole family in seconds.</span>
+             <span><strong>Booking Hotels:</strong> Keep passport details handy for the whole family when filling forms.</span>
           </li>
           <li class="flex gap-3">
              <span class="text-xl">🖨️</span>
-             <span><strong>Visa Applications:</strong> Export perfectly cropped PDFs ready for printing.</span>
+             <span><strong>Visa Applications:</strong> Export document images as PDFs for printing or sharing. Review and adjust images before exporting.</span>
           </li>
         </ul>
       </div>
@@ -362,25 +360,39 @@
       <!-- Mobile Condensed Features (Visible only on mobile) -->
       <div class="md:hidden space-y-4 px-4 mb-8">
         <div class="glass-card p-4 rounded-xl flex items-center gap-4">
-           <div class="text-brand-gold bg-blue-500/10 p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg></div>
-           <div>
-             <h3 class="text-white font-semibold">Smart Reminders</h3>
-             <p class="text-xs text-blue-200/60">Alerts 6 months before expiry</p>
-           </div>
+          <div class="text-brand-gold bg-blue-500/10 p-2 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-white font-semibold">Smart Reminders</h3>
+            <p class="text-xs text-blue-200/60">Alerts 6 months before expiry</p>
+          </div>
         </div>
+
         <div class="glass-card p-4 rounded-xl flex items-center gap-4">
-           <div class="text-brand-gold bg-blue-500/10 p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /></svg></div>
-           <div>
-             <h3 class="text-white font-semibold">Scan Guides</h3>
-             <p class="text-xs text-blue-200/60">Perfectly frame passports & IDs</p>
-           </div>
+          <div class="text-brand-gold bg-blue-500/10 p-2 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-white font-semibold">Scan Guides</h3>
+            <p class="text-xs text-blue-200/60">Guides to frame passports and IDs</p>
+          </div>
         </div>
+
         <div class="glass-card p-4 rounded-xl flex items-center gap-4">
-           <div class="text-brand-gold bg-blue-500/10 p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg></div>
-           <div>
-             <h3 class="text-white font-semibold">Combined Exports</h3>
-             <p class="text-xs text-blue-200/60">Print everyone's docs in one click</p>
-           </div>
+          <div class="text-brand-gold bg-blue-500/10 p-2 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-white font-semibold">Combined Exports</h3>
+            <p class="text-xs text-blue-200/60">Combine documents into one PDF for printing</p>
+          </div>
         </div>
       </div>
 
@@ -396,7 +408,7 @@
           </div>
           <div>
             <h3 class="text-lg font-semibold text-white mb-2">Family Profiles</h3>
-            <p class="text-sm text-slate-400 leading-relaxed">Store documents for your whole family. Spouse, kids, parents — everyone organized in one place with separate profiles.</p>
+            <p class="text-sm text-slate-400 leading-relaxed">Store documents for your whole family. Spouse, kids, parents, everyone organized in one place with separate profiles.</p>
           </div>
         </div>
 
@@ -457,16 +469,14 @@
         <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col gap-4">
           <div class="h-12 w-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-400/20 text-blue-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
             </svg>
           </div>
           <div>
             <h3 class="text-lg font-semibold text-white mb-2">On-Device OCR</h3>
-            <p class="text-sm text-slate-400 leading-relaxed">Automatically detect expiry dates from your documents. All processing happens on your device — nothing is uploaded.</p>
+            <p class="text-sm text-slate-400 leading-relaxed">Automatically detect expiry dates from your documents. All processing happens on your device, nothing is uploaded.</p>
           </div>
         </div>
-      <!-- Privacy Features Continued -->
-
 
         <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col gap-4">
           <div class="h-12 w-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-400/20 text-brand-gold">
@@ -476,32 +486,31 @@
           </div>
           <div>
             <h3 class="text-lg font-semibold text-white mb-2">On-Device Storage</h3>
-
             <p class="text-sm text-slate-400 leading-relaxed">Your documents remain on your device and are protected by built-in system protections.</p>
           </div>
         </div>
 
         <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col gap-4">
           <div class="h-12 w-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-400/20 text-blue-300">
-             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414" />
             </svg>
           </div>
           <div>
             <h3 class="text-lg font-semibold text-white mb-2">Works Offline</h3>
-            <p class="text-sm text-slate-400 leading-relaxed">No internet connection required. Your vault works perfectly in airplane mode.</p>
+            <p class="text-sm text-slate-400 leading-relaxed">No internet connection required. Works in airplane mode.</p>
           </div>
         </div>
 
-         <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col gap-4">
+        <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col gap-4">
           <div class="h-12 w-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-400/20 text-blue-300">
-           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
           <div>
             <h3 class="text-lg font-semibold text-white mb-2">No Tracking</h3>
-             <p class="text-sm text-slate-400 leading-relaxed">No analytics. No ads. No hidden SDKs. Just code we wrote.</p>
+            <p class="text-sm text-slate-400 leading-relaxed">No ads. No third-party tracking SDKs.</p>
           </div>
         </div>
 
@@ -525,7 +534,6 @@
         <p class="text-blue-200/70 text-lg max-w-2xl mx-auto">One-time purchase. No subscriptions. No hidden fees. No data harvesting.</p>
       </div>
 
-      <!-- Mobile Pricing Summary (Visible only on mobile) -->
       <!-- Mobile Pricing (Visible only on mobile) -->
       <div class="md:hidden space-y-4 px-4">
         <!-- Free Card Mobile -->
@@ -568,7 +576,7 @@
             <span class="text-xl font-bold text-brand-gold">$9.99</span>
           </div>
           <p class="text-xs text-blue-200/60 mb-4">For your whole family, forever. No subscription.</p>
-          
+
           <ul class="space-y-3 mb-6 text-sm">
             <li class="flex items-center gap-3 text-white">
               <svg class="h-4 w-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
@@ -599,7 +607,7 @@
               <span>Multi-page documents</span>
             </li>
           </ul>
-          
+
           <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="block w-full py-3 rounded-xl bg-brand-gold text-brand-blue font-bold text-center text-sm hover:bg-brand-goldHover transition-colors">
             Get Pro
           </a>
@@ -750,7 +758,7 @@
               </svg>
               <span>Multi-page documents</span>
             </li>
-            </ul>
+          </ul>
 
           <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-6 rounded-xl bg-brand-gold text-brand-blue font-semibold text-center hover:bg-brand-goldHover transition-colors">
             Get Pro — $9.99
@@ -767,7 +775,7 @@
     <!-- Mobile FAQ (Visible only on mobile) -->
     <section class="md:hidden px-4 space-y-6">
       <h2 class="text-2xl font-bold text-white text-center mb-6">Common Questions</h2>
-      
+
       <details class="glass-panel rounded-xl group" open>
         <summary class="flex items-center justify-between p-4 cursor-pointer list-none">
           <span class="font-medium text-white">Is it really private?</span>
@@ -788,7 +796,7 @@
           </span>
         </summary>
         <div class="text-blue-200/80 text-sm px-4 pb-4 leading-relaxed">
-          Since data is on-device, you should rely on your standard iCloud/Android device backups to restore your data on a new phone.
+          Your vault is stored on your device. If you switch phones, restore using your usual phone backup.
         </div>
       </details>
 
@@ -806,7 +814,7 @@
     <section class="scroll-fade-in">
       <div class="glass-panel rounded-2xl p-6 sm:p-8 text-center max-w-3xl mx-auto">
         <p class="text-blue-200/60 text-sm leading-relaxed">
-          <strong class="text-blue-200/80">Important:</strong> Travel Document Vault is a personal organization tool. It does not verify document authenticity, provide legal advice, or guarantee compliance with immigration requirements. Always verify travel requirements with official government sources.
+          <strong class="text-blue-200/80">Important:</strong> Travel Document Vault is a personal organization tool. It does not verify document authenticity or provide legal or travel advice. Always verify travel requirements with official government sources.
         </p>
       </div>
     </section>
@@ -828,7 +836,6 @@
         <span class="text-blue-200/20 hidden sm:inline">·</span>
         <a href="features/" class="text-blue-200/60 hover:text-white transition-colors duration-200">Features</a>
         <span class="text-blue-200/20 hidden sm:inline">·</span>
-
         <a href="faq/" class="text-blue-200/60 hover:text-white transition-colors duration-200">FAQ</a>
         <span class="text-blue-200/20 hidden sm:inline">·</span>
         <a href="blog/" class="text-blue-200/60 hover:text-white transition-colors duration-200">Why We Built This</a>
@@ -859,16 +866,15 @@
         });
       }, observerOptions);
 
-      // Observe all scroll-animated elements
       document.querySelectorAll('.scroll-fade-in, .scroll-fade-in-left, .scroll-fade-in-right, .stagger-children').forEach(el => {
         observer.observe(el);
       });
     });
   </script>
 
-
   <script src="assets/js/cookie-consent.js" defer></script>
   <script src="assets/js/mobile-menu.js" defer></script>
+
   <!-- Mobile Download CTA -->
   <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer"
      onclick="gtag('event', 'download_click', {'event_category': 'conversion', 'event_label': 'mobile_sticky_cta_home'});"
